@@ -5,7 +5,7 @@ import Card from '../../card/Card';
 
 const Functionalities = () => {
   return (
-    <section className="w-full max-w-[1200px] mx-auto py-16">
+    <section className="w-full max-w-[1200px] mx-auto py-16 px-9">
       <h2 className="text-black text-center">
         Beleza & Funcionalidade
       </h2>

@@ -9,19 +9,19 @@ const Navbar = () => {
       <nav className="flex justify-between w-full max-w-[1150px] mx-auto py-6">
         <h1 className="text-white px-4 lg:px-0">Decora & Conforto</h1>
         <ul className="text-white hidden lg:flex gap-5">
-            <li className="cursor-pointer text-lg font-semibold text-white border-2 border-orange-400 rounded-sm
+            <li className="cursor-pointer text-lg font-semibold text-white border-2 border-orange-400 rounded-lg
             hover:bg-white hover:text-orange-400 duration-300 hover:border-white">
               Home
             </li>
-            <li className="cursor-pointer text-lg font-semibold text-white border-2 border-orange-400 rounded-sm
+            <li className="cursor-pointer text-lg font-semibold text-white border-2 border-orange-400 rounded-lg
             hover:bg-white hover:text-orange-400 duration-300 hover:border-white">
               About
             </li>
-            <li className="cursor-pointer text-lg font-semibold text-white border-2 border-orange-400 rounded-sm
+            <li className="cursor-pointer text-lg font-semibold text-white border-2 border-orange-400 rounded-lg
             hover:bg-white hover:text-orange-400 duration-300 hover:border-white">
               Contact
             </li>
-            <li className="cursor-pointer text-lg font-semibold text-white border-2 border-orange-400 w-[80px] text-center rounded-sm
+            <li className="cursor-pointer text-lg font-semibold text-white border-2 border-orange-400 w-[80px] text-center rounded-lg
             hover:bg-white hover:text-orange-400 duration-300 hover:border-white">
               Buy
             </li>

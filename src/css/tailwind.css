@@ -10,6 +10,15 @@
     --primary-orange: #FF9D1C;
     --secundary-orange: #FFBC1C
 }
+.icon {
+    font-size: 1.5rem;
+    color: var(--primary-orange);
+    cursor: pointer;
+    transition: .5s;
+}
+.icon:hover {
+    color: var(--primary-dark);
+}
 @layer base {
     h1 {
         @apply font-roboto text-3xl lg:text-5xl font-bold

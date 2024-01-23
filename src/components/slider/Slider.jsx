@@ -1,27 +1,24 @@
 import React from 'react';
 import { IoIosArrowBack, IoIosArrowForward  } from "react-icons/io";
-import Decoration1 from '../../assets/decoration1.jpg';
-import Decoration2 from '../../assets/decoration2.jpg';
-import Decoration3 from '../../assets/decoration3.jpg';
 import Slide from './slide/Slide';
 
 const data = {
     fotos: [
         {
             id: 0,
-            src: Decoration1
+            src: "https://images.unsplash.com/photo-1558882224-dda166733046?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
             id: 1,
-            src: Decoration2
+            src: "https://images.unsplash.com/photo-1544457070-4cd773b4d71e?q=80&w=1860&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
             id: 2,
-            src: Decoration3
+            src: "https://images.unsplash.com/photo-1632935187086-49a9d8027292?q=80&w=1922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
             id: 3,
-            src: Decoration2
+            src: "https://images.unsplash.com/photo-1589271243958-d61e12b61b97?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
     ]
 }

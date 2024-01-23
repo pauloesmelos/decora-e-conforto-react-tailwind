@@ -4,8 +4,8 @@ const Slide = ({ src }) => {
   
   return (
     <div 
-      className="w-full h-full bg-center bg-no-repeat bg-cover duration-[.5s] ease-linear"
-      style={{backgroundImage: `url(${src})`,}}
+      className="w-full h-full bg-center bg-no-repeat bg-cover duration-[.1s]"
+      style={{backgroundImage: `url('${src}')`,}}
     >
       
     </div>

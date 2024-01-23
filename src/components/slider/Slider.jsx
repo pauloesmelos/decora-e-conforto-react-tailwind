@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+import { IoIosArrowBack, IoIosArrowForward  } from "react-icons/io";
 import Decoration1 from '../../assets/decoration1.jpg';
 import Decoration2 from '../../assets/decoration2.jpg';
 import Decoration3 from '../../assets/decoration3.jpg';
@@ -43,29 +43,27 @@ const Slider = () => {
             </h2>
         </div>
         <div className="relative my-8 ">
-            <div className="w-full h-full absolute top-0 flex justify-between px-6 lg:px-24 items-center z-10">
-                <FaArrowCircleLeft 
+            <div className="w-full h-full absolute top-0 flex justify-between px-6 lg:px-16 items-center z-10">
+                <IoIosArrowBack 
                     onClick={prev}
-                    className="text-slate-300 hover:text-slate-200 cursor-pointer text-3xl sm:text-6xl"
+                    className="text-slate-200 hover:bg-black/40 cursor-pointer text-3xl sm:text-6xl
+                    hover:rounded-full"
                 />
-                <FaArrowCircleRight 
+                <IoIosArrowForward 
                     onClick={next}
-                    className="text-slate-300 hover:text-slate-200 cursor-pointer text-3xl sm:text-6xl"
+                    className="text-slate-200 hover:bg-black/40 cursor-pointer text-3xl sm:text-6xl
+                    hover:rounded-full"
                 />
             </div>
-            {data.fotos.map((element, index) => (
-                <Slide
-                    active={active}
-                    index={index}
-                    setActive={setActive} 
-                    img={element.src}
-                    key={index * Math.random()}
+            <div className="w-full max-w-[1000px] h-[580px]">
+                <Slide 
+                    src={data.fotos[active].src}
                 />
-            ))}
+            </div>
             <div className="w-full flex justify-center gap-4 mt-9">
                 {data.fotos.map((element, index) => (
-                    <div className={index === active ? `sm:w-8 sm:h-8 w-4 h-4 bg-slate-400 rounded-full cursor-pointer` : `
-                    sm:w-8 sm:h-8 w-4 h-4 bg-slate-200 rounded-full cursor-pointer`} 
+                    <div className={index === active ? `sm:w-5 sm:h-5 w-4 h-4 bg-slate-400 rounded-full cursor-pointer` : `
+                    sm:w-5 sm:h-5 w-4 h-4 bg-slate-200 rounded-full cursor-pointer`} 
                         key={index * Math.random()}
                     >
                         

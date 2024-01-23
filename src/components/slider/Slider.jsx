@@ -30,7 +30,9 @@ const Slider = () => {
   const prev = () => {
     setActive(e => (e - 1 >= 0 ? e  - 1 : e));
   }
-
+  const goToIndex = (index) => {
+    setActive(index);
+  }
   return (
     <section className="w-full max-w-[1200px] mx-auto py-16">
       <div className="px-9">
@@ -57,15 +59,17 @@ const Slider = () => {
                     src={data.fotos[active].src}
                 />
             </div>
-            <div className="w-full flex justify-center gap-4 mt-9">
+            <div className="w-full flex justify-center items-center gap-4 mt-9">
                 {data.fotos.map((element, index) => (
-                    <div className={index === active ? `sm:w-5 sm:h-5 w-4 h-4 bg-slate-400 rounded-full cursor-pointer` : `
-                    sm:w-5 sm:h-5 w-4 h-4 bg-slate-200 rounded-full cursor-pointer`} 
-                        key={index * Math.random()}
+                    <span 
+                    className={index === active ? `bg-slate-400 cursor-pointer z-10 w-5 h-5` : `bg-slate-200 z-10 cursor-pointer w-5 h-5`}
+                    key={index}
+                    onClick={() => goToIndex(index)}
                     >
                         
-                    </div>
+                    </span>
                 ))}
+              
             </div>
         </div>
       </div>

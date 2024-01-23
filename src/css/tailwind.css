@@ -30,7 +30,7 @@
         @apply p-2
     }
     button {
-        @apply bg-gradient-to-r from-[var(--primary-orange)] to-[var(--secundary-orange)] p-3 rounded-md text-white font-bold duration-700
+        @apply cursor-pointer bg-gradient-to-r from-[var(--primary-orange)] to-[var(--secundary-orange)] p-3 rounded-md text-white font-bold duration-700
     }
     button:hover {
         @apply bg-gradient-to-r from-[var(--secundary-orange)] to-[var(--primary-orange)] duration-700

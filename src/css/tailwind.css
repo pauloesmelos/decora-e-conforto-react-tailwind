@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-dark: #333;
+    --primary-light: #fff;
+    --primary-orange: #FF9D1C;
+    --secundary-orange: #FFBC1C
+}
+@layer base {
+    h1 {
+        @apply font-roboto text-3xl lg:text-5xl font-bold
+    }
+    h2 {
+        @apply text-white font-bold text-3xl sm:text-4xl lg:text-6xl
+    }
+    li {
+        @apply p-2
+    }
+    button {
+        @apply bg-gradient-to-r from-[var(--primary-orange)] to-[var(--secundary-orange)] p-3 rounded-md text-white font-bold duration-700
+    }
+    button:hover {
+        @apply bg-gradient-to-r from-[var(--secundary-orange)] to-[var(--primary-orange)] duration-700
+    }
+}

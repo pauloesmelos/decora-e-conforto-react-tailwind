@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaYoutube, FaInstagram, FaWhatsapp } from "react
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-orange-100/80 py-9 mt-16">
+    <footer className="w-full bg-slate-100/80 py-9 mt-16">
         <div className="flex flex-col md:flex-row justify-between px-4">
             <h3 className="font-roboto font-semibold text-slate-500 text-xl sm:text-3xl">
                 DECORA & CONFORTO.
@@ -28,16 +28,16 @@ const Footer = () => {
         </div>
         <div className="flex justify-between px-5">
             <ul className="text-gray-500 flex flex-col md:flex-row">
-                <li className="cursor-pointer">Home</li>
-                <li className="cursor-pointer">Contact</li>
-                <li className="cursor-pointer">About</li>
-                <li className="cursor-pointer">Buy</li>
+                <li className="cursor-pointer hover:text-orange-400">Home</li>
+                <li className="cursor-pointer hover:text-orange-400">Contact</li>
+                <li className="cursor-pointer hover:text-orange-400">About</li>
+                <li className="cursor-pointer hover:text-orange-400">Buy</li>
             </ul>
             <ul className="text-gray-500 flex flex-col md:flex-row">
-                <li className="cursor-pointer">CNPJ</li>
-                <li className="cursor-pointer">Legal</li>
-                <li className="cursor-pointer">Services</li>
-                <li className="cursor-pointer">Recruitment</li>
+                <li className="cursor-pointer hover:text-orange-400">CNPJ</li>
+                <li className="cursor-pointer hover:text-orange-400">Legal</li>
+                <li className="cursor-pointer hover:text-orange-400">Services</li>
+                <li className="cursor-pointer hover:text-orange-400">Recruitment</li>
             </ul>
         </div>
     </footer>
